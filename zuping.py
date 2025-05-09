@@ -3,7 +3,10 @@ import struct
 import time
 import sys
 import os
-from colorama import Fore, Style
+from colorama import Fore, Style, init
+
+# Initialize colorama for Windows compatibility
+init(autoreset=True)
 
 def checksum(source_string):
     """Calculate the checksum of the packet."""
